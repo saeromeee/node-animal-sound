@@ -12,7 +12,7 @@ app.listen(3000, () => {
 app.use(cors())//app은 서버를 의미 ()안에 조건을 설정해 어디서 요청하는지에 따라 허용해주거나 차단
 
 // ==========웹소켓 서버 생성=========== //
-const wss = new WebSocketServer({ port: 8001 })
+const wss = new WebSocketServer("https://port-0-node-animal-sound-9d7lbw2eld391nbq.gksl2.cloudtype.app/")
 
 // broadcast 메소드 추가
 wss.broadcast = (message) => {
